@@ -1,0 +1,17 @@
+.explore__button{
+    @include btn-purple;
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: 1px 3px 7px rgb(130, 130, 130);
+    }
+}
+.cmd__button{
+    @include btn-purple;
+    width: 50%;
+    margin-top: 35px;
+    margin-bottom: 50px;
+    &:hover{
+        filter: brightness(1.1);
+        box-shadow: 1px 3px 7px rgb(130, 130, 130);
+    }
+}

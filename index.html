@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0, user-scalable=10">
+    <link rel="stylesheet" type="text/css" href=".public/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <title>OhMyFood-Accueil</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader__spinner">
+        </div>
+        <div class="loader__text">CHARGEMENT</div>
+    </div>
+    <header class="header">
+        <img class="header__logo" src=".public/images/logo/ohmyfood@2x.svg" alt="logo-ohmyfood">
+    </header>
+    <main class="choix-menu">
+        <section class="location">
+            <i class='fas fa-map-marker-alt location__icon'></i>
+            <p class="location__txt">Paris, Belleville</p>
+        </section>
+        <section class="explore">
+            <h3 class="explore__title">Réserver le menu qui vous convient</h3>
+            <p class="explore__text">Découvrez des restaurants d'exceptions, selectionnés par nos soins</p>
+            <button type="button" class="explore__button">Explorer nos restaurants</button>
+        </section>
+        <section class="mode">
+            <h3 class="mode__title">Fonctionnement</h3>
+            <button type="button" class="mode__select">
+                <span class="num">1</span><span class="description"><i class="fas fa-tablet-alt"></i><p class="text">Choisissez un restaurant</p></span></button>
+            <button type="button" class="mode__select">
+                <span class="num">2</span><span class="description"><i class="fas fa-list"></i><p class="text">Composez votre menu</p></span></button>
+            <button type="button" class="mode__select">
+                <span class="num">3</span><span class="description"><i class="fas fa-store"></i><p class="text">Dégustez au restaurant</p></span></button>
+        </section>
+        <section class="restau">
+            <h3 class="restau__title">Restaurants</h3>
+            <div class="restau__card">
+                <a href="./menu-1.html">
+                    <div class="image">
+                        <img class="photo" src=".public/images/restaurants/palette-du-gout.png" alt="photo-la-palette-du-gout">
+                        <span class="new">Nouveau</span>
+                    </div>
+                    <div class="name">
+                        <p><strong>La palette du goût</strong></p>
+                        <p>Ménilmontant</p>
+                    </div>
+                </a>
+            </div>
+            <div class="restau__card">
+                <a href="./menu-2.html">
+                    <div class="image">
+                        <img class="photo" src=".public/images/restaurants/note-enchantée.png" alt="photo-la-note-enchanté">
+                        <span class="new">Nouveau</span>
+                    </div>
+                    <div class="name">
+                        <p><strong>La note enchantée</strong></p>
+                        <p>Charonne</p>
+                    </div>
+                </a>
+            </div>
+            <div class="restau__card">
+                <a href="./menu-3.html">
+                    <div class="image">
+                        <img class="photo" src=".public/images/restaurants/a-la-francaise.png" alt="photo-a-la-francaise">
+                    </div>
+                    <div class="name">
+                        <p><strong>A la Française</strong></p>
+                        <p>Cité Rouge</p>
+                    </div>
+                </a>
+            </div>
+            <div class="restau__card">
+                <a href="./menu-4.html">
+                    <div class="image">
+                        <img class="photo" src=".public/images/restaurants/le-delice-des-sens.png" alt="photo-le-delice-des-sens">
+                    </div>
+                    <div class="name">
+                        <p><strong>Le délice des sens</strong></p>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="contact">
+        <h5 class="contact__logo">ohmyfood</h5>
+        <div class="contact__links">
+            <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
+            <a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

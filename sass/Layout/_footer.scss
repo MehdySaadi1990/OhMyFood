@@ -1,0 +1,33 @@
+.contact{
+    background-color:rgb(60, 56, 56);
+    padding: 25px 0 35px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    &__logo{
+        padding-bottom: 10px;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        a{
+            text-decoration: none;
+            color: white;
+            padding-top: 10px;
+        }
+    }
+    
+    
+    }
+    @media screen and(min-width:"728px"){
+        .contact{
+            &__links{
+                width: 90%;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+        }
+        
+        
+    }

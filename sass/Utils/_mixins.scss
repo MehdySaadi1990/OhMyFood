@@ -1,0 +1,23 @@
+@mixin btn-purple {
+    padding: 13px;
+    border-radius: 20px;
+    background: linear-gradient($colour-secondary,$colour-primary);
+    border: none;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 3px 5px rgb(170, 170, 170);
+    transition: filter 200ms;
+}
+@mixin coeur {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    content: "\f004";
+}
+@mixin menu-title{
+    font-family: 'Shrikhand',sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    align-self: flex-start;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+} 

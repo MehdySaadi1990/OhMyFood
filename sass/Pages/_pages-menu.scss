@@ -1,0 +1,224 @@
+.choix-1{
+    background-image: url(/.public/images/restaurants/palette-du-gout.png);
+    background-size:contain;
+}
+.choix-2{
+    background-image: url(/.public/images/restaurants/note-enchantée.png);
+    background-size:contain;
+}
+.choix-3{
+    background-image: url(/.public/images/restaurants/a-la-francaise.png);
+    background-size:contain;
+}
+.choix-4{
+    background-image: url(/.public/images/restaurants/le-delice-des-sens.png);
+    background-size:contain;
+}
+.restau-pic{
+    width: 100%;
+    height: 180px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    background-color: rgb(245, 245, 245);
+    border-radius: 40px 40px 0 0 ;
+    padding-top:20px;
+    &__title{
+        @include menu-title;
+
+        &::before{
+            @include coeur;
+            font-weight:400;
+            left: 85%;
+            transition: opacity 200ms;
+        } 
+        &::after{
+            @include coeur; 
+            font-weight: 900;
+            left: 85%;
+            background: linear-gradient($colour-secondary,$colour-primary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            opacity: 0;
+            transition: opacity 200ms;
+        }
+        &:hover::after{
+            opacity: 1;
+        }
+        &:hover::before{
+            opacity: 0;
+        }
+    }
+    &__time{
+        font-size: 16px;
+        font-weight: 300;
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        &__txt{
+            align-self: flex-start;
+        }
+        &__udl{
+            width: 20px;
+            border-top: 2px solid $colour-tertiary;
+            align-self: flex-start;
+            margin-bottom: 10px;
+        }
+    }
+    &__card{
+        width: 95%;
+        height: 70px;
+        background-color: white;
+        box-shadow: 1px 3px 5px rgb(212, 212, 212);
+        margin: 10px 0 10px 0;
+        border-radius: 15px;
+        padding: 10px;
+        animation: fadin 2s;
+        -webkit-animation: fadein 2s;
+        animation-fill-mode: both; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+        &__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: nowrap;
+            cursor: pointer; 
+            width: auto;
+            height: 100%;
+            position: relative;
+            &__name{
+                width: 100%;
+                font-weight: bold;
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+
+
+            }
+            &__describe{
+                width: 100%;
+                font-size: 13px;
+                font-weight: 300;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+        }
+        &__prix{
+            align-self: flex-end;
+            font-weight: bold;
+        }
+        &__confirm{
+            position: absolute;
+            border-radius: 0 15px 15px 0;
+            width: 20%;
+            height: 100%;
+            background-color: $colour-tertiary;
+            left: 80%;
+            transform: scaleX(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &__icon{
+                border-radius: 50%;
+                padding: 5px;
+                transform: rotateX(90deg);
+                font-size: 14px;
+                background:white;
+                color: $colour-tertiary;
+            }
+        }
+        &:hover {
+            .menu__card__info{
+                width: 60%;
+            }
+            .menu__card__prix{
+                width: 30%;
+            }
+
+            .menu__card__confirm{
+                animation: validAppear 300ms backwards;
+                transform: scaleX(1);
+                &__icon{
+                    animation: rotateValid 300ms 100ms;
+                    transform: scaleX(1);
+                }
+            }
+        }    
+        
+    }
+
+}
+.u1{
+  animation-delay:200ms;  
+}
+.u2{
+    animation-delay:300ms;
+}
+.u3{
+    animation-delay: 400ms;
+}
+.u4{
+    animation-delay: 500ms;
+}
+.u5{
+    animation-delay: 600ms;
+}
+.u6{
+    animation-delay: 700ms;
+}
+.u7{
+    animation-delay: 800ms;
+}
+.u8{
+    animation-delay: 900ms;
+}
+.u9{
+    animation-delay: 1000ms;
+}
+@media screen and (min-width:"768px") {
+    .restau-pic{
+        height: 450px;
+    }
+    .menu{
+        &__title{
+            align-self: center;
+            margin-right: 25px;
+            &::after{
+                left: 70%;
+            }
+            &::before{
+                left: 70%;
+            }
+        }
+        &__time{
+            width:50%;
+            &__txt{
+                align-self: center;
+            }
+            &__udl{
+                align-self: center;
+                width: 50px;
+            }
+        }
+    }
+    .cmd__button{
+        width: 200px;
+    }
+}
