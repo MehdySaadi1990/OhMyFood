@@ -198,7 +198,8 @@ footer {
   right: 30px;
 }
 .location__txt {
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 .explore {
@@ -252,7 +253,7 @@ footer {
 }
 .mode__select .description .text {
   padding-left: 25px;
-  font-weight: bold;
+  font-weight: 500;
 }
 .mode__select:hover {
   background-color: #f2eafb;
