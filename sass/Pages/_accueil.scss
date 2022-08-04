@@ -208,9 +208,18 @@
         }
         .image{
             .new{
-                left: 80%;
+                left: 70%;
             }
         }
     }  
     
+}
+@media screen and (min-width:"992px") {
+   .restau{
+    .image{
+        .new{
+            left:80%;
+        }
+    }
+   } 
 }
