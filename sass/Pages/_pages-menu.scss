@@ -1,18 +1,18 @@
 .choix-1{
     background-image: url(images/palette-du-gout.png);
-    background-size:contain;
+    background-size:100%;
 }
 .choix-2{
     background-image: url(images/note-enchantée.png);
-    background-size:contain;
+    background-size:100%;
 }
 .choix-3{
     background-image: url(images/a-la-francaise.png);
-    background-size:contain;
+    background-size:100%;
 }
 .choix-4{
     background-image: url(images/le-delice-des-sens.png);
-    background-size:contain;
+    background-size:100%;
 }
 .restau-pic{
     width: 100%;
@@ -193,6 +193,7 @@
     animation-delay: 1000ms;
 }
 @media screen and (min-width:"768px") {
+    
     .restau-pic{
         height: 450px;
     }
@@ -220,5 +221,22 @@
     }
     .cmd__button{
         width: 200px;
+    }
+}
+@media screen and (min-width:"992px") {
+    .restau-pic{
+        height: 650px;
+    }
+    .menu{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        &__title{
+            width: 100%;
+            text-align: center;
+        }
+        &__time{
+            width: 30%;
+        }
     }
 }
